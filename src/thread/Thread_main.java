@@ -13,14 +13,14 @@ public class Thread_main {
 			thr1[i]  = new Thread_run();
 			thr1[i].start();
 		
-	
-		try {
-			thr1[i].join();
-		} catch (InterruptedException e) {
-			// TODO Auto-generated catch block
-			e.printStackTrace();
+			try {
+				thr1[i].join();
+			} catch (InterruptedException e) {
+				// TODO Auto-generated catch block
+				e.printStackTrace();
+			}
 		}
-		}
+		
 		for(int i = 0; i < 10; i++) {
 			System.out.println("main‚©‚ço—Í :"+i);
 		}
